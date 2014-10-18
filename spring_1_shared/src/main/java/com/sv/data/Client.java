@@ -31,7 +31,7 @@ import org.hibernate.annotations.SortNatural;
 @Entity
 @Table( name="Client")
 @NamedQueries(value = {
-@NamedQuery(name = Client.NQN_FIND_BY_NAME, query = "select c from Client c where cli_name = :name"),
+@NamedQuery(name = Client.NQN_FIND_BY_NAME, query = "select c from Client c where c.name = :name"),
 @NamedQuery(name = Client.NQN_FIND_ALL    , query = "select c from Client c")
 })
 public class Client extends AbstractEntity<String>{
