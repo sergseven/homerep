@@ -35,7 +35,7 @@ public class Auto extends AbstractEntity<String> implements Comparable<Auto> {
   }
   
   @Override
-  public void setPK(String pk) {
+  public void setPK(String pk) { 
     autoId = pk;
   }
 
