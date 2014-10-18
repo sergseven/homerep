@@ -1,0 +1,42 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+
+  <servlet>
+      <servlet-name>springGwtRemoteServiceServlet</servlet-name>
+      <servlet-class>org.spring4gwt.server.SpringGwtRemoteServiceServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>springGwtRemoteServiceServlet</servlet-name>
+      <url-pattern>/spring_1_ep/*</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>clients.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  <resource-ref>
+   <description>postgreSQL Datasource example</description>
+   <res-ref-name>jdbc/mainDBDataSource</res-ref-name>
+   <res-type>javax.sql.DataSource</res-type>
+   <res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <!-- <data-source>
+    <name>java:app/mainDBDataSource</name>
+    <class-name>org.postgresql.ds.PGPoolingDataSource</class-name>
+    <url>jdbc:postgresql://localhost:5432/testdb1</url>
+    <user>serg</user>
+    <password>123456</password>
+    <transactional>true</transactional>
+    <isolation-level>TRANSACTION_READ_COMMITTED</isolation-level>
+    <initial-pool-size>2</initial-pool-size>
+    <max-pool-size>10</max-pool-size>
+    <min-pool-size>5</min-pool-size>
+    <max-statements>0</max-statements>  
+  </data-source> -->
+</web-app>  
