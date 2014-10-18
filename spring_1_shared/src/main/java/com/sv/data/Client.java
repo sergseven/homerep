@@ -39,7 +39,7 @@ public class Client extends AbstractEntity<String>{
   public static final String NQN_FIND_ALL     = "Client.loadAll";
   
   @Id
-  @GeneratedValue(generator="uuid")
+  @GeneratedValue(generator="uuid") 
   @GenericGenerator(name="uuid", strategy="uuid")
   @Column(name="cli_clientId", length=32)
   private String clientId;
