@@ -43,7 +43,7 @@ public class Auto extends AbstractEntity<String> implements Comparable<Auto> {
     return autoId;
   }
 
-  public void setAutoId(String autoId) {
+  public void setAutoId(String autoId) { 
     this.autoId = autoId;
   }
 
