@@ -23,9 +23,6 @@
   </dependencies>
   
   <modules>
-  	
-  	<module>spring_1_ep</module>
-  	<module>spring_1_shared</module>
-    <module>spring_1_gwt</module>
+    <module>spring_ep</module>
   </modules>
 </project>
