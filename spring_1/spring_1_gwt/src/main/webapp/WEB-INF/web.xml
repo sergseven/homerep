@@ -3,15 +3,15 @@
   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
   version="3.0">
 
-  <servlet>
+  <!-- <servlet>
       <servlet-name>springGwtRemoteServiceServlet</servlet-name>
       <servlet-class>org.spring4gwt.server.SpringGwtRemoteServiceServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
       <servlet-name>springGwtRemoteServiceServlet</servlet-name>
-      <url-pattern>/spring_1_ep/*</url-pattern>
-  </servlet-mapping>
+      <url-pattern>/*</url-pattern>
+  </servlet-mapping> -->
   
   <welcome-file-list>
     <welcome-file>clients.html</welcome-file>
