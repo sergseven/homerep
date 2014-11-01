@@ -39,6 +39,9 @@ public class TestController {
   @Autowired
   private ClientDao clientDao;
   
+  
+  
+  
   @RequestMapping("/index.do")
   public String index(Model model) {
     model.addAttribute("visitorCount", visitorCount++);
